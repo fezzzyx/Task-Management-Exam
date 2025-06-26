@@ -16,5 +16,4 @@ public class Task
     public DateTime Deadline { get; set; }
 
     public int? UserId { get; set; }
-    public User? AssignedUser { get; set; }
 }
