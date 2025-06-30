@@ -10,9 +10,13 @@ namespace Task_Management_Exam.Data;
 
 public class AppDbContext : DbContext
 {
-    public DbSet<User> Users { get; set; }
+    public AppDbContext()
+    {
+        Database.EnsureCreated();
+    }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=CafeAppDB;Integrated Security=True");
+        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TaskManagementDB;Integrated Security=True");
     }
+    public DbSet<User> Users { get; set; }
 }
