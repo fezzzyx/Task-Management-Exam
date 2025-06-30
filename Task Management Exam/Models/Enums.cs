@@ -14,10 +14,10 @@ public class Enums
         InProgress,
         Done
     }
-
     public enum UserRole
     {
         Regular,
         Admin
     }
+
 }

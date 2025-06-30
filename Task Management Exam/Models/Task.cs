@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task_Management_Exam.Models;
 
+
+public enum TaskStatus
+{
+    ToDo,
+    InProgress,
+    Done
+}
 public class Task
 {
     public int Id { get; set; }
