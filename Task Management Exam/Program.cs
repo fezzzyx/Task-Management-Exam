@@ -20,6 +20,7 @@ client.Log += msg => {
 };
 
 var bot = new Bot(client, userService, taskService);
-await bot.StartAsync("asdasd");
+
+await bot.StartAsync("MTM4OTY2MzA5NDQ2NDA1MzM0OQ.GpR9vx.noMVPK14PXXmW0hPRdrmT7HYzOoTMhGEOjdBWA");
 
 await Task.Delay(-1);
