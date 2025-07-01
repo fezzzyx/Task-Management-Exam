@@ -55,8 +55,11 @@ public class UserService : IUserService
         CurrentUser = user;
         return user;
     }
+    public List<User> GetAllUsers()
+    {
+        return db.Users.ToList();
+    }
 
-   
 }
 
 
