@@ -16,7 +16,8 @@ public class AppDbContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TaskManagementDB;Integrated Security=True");
+        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TasksManagementDB;Integrated Security=True");
     }
     public DbSet<User> Users { get; set; }
+    public DbSet<TaskHolder> Tasks { get; set; }
 }
