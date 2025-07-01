@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_Management_Exam.Models;
 
-public class Task
+public class TaskHolder
 {
     public int Id { get; set; }
     public string Title { get; set; }
