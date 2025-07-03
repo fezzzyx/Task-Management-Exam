@@ -11,4 +11,6 @@ public interface IUserService
     User? CurrentUser { get; }
     Task<bool> RegisterAsync(string username, string password, CancellationToken cancellationToken = default);
     Task<User?> LoginAsync(string username, string password, CancellationToken cancellationToken = default);
+
+    List<User> GetAllUsers();
 }
